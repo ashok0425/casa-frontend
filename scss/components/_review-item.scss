@@ -1,0 +1,46 @@
+.reviewItem {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  grid-gap: 10px 15px;
+  align-items: center;
+  background: $w;
+  border: 1px solid #e8e2ea;
+  padding: 30px;
+  border-radius: 20px;
+  figure {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      @include OBJFIT;
+    }
+  }
+  .name {
+    h6 {
+      font-size: 20px;
+      color: $purple_501BA8;
+      line-height: 1.1;
+    }
+    span {
+      font-size: 14px;
+      line-height: 1.1;
+    }
+  }
+  .reviews {
+    @include FLEX;
+    list-style: none;
+    li {
+      @include MARGIN(0 3px 0 0);
+      img {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+  & > p {
+    grid-column: auto/span 3;
+  }
+}

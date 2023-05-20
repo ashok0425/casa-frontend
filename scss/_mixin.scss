@@ -1,0 +1,25 @@
+@mixin FLEX($align: center, $justify: flex-start, $dis: flex) {
+  display: $dis;
+  align-items: $align;
+  justify-content: $justify;
+}
+@mixin BTN($bgColor: $b, $textColor: $w, $hBgColor: $b, $hTextColor: $w) {
+  background: $bgColor;
+  color: $textColor;
+  &:hover {
+    background: $hBgColor;
+    color: $hTextColor;
+  }
+}
+@mixin OBJFIT($fit: cover, $pos: center) {
+  width: 100%;
+  height: 100%;
+  object-fit: $fit;
+  object-position: $pos;
+}
+@mixin MARGIN($m: 0) {
+  margin: $m;
+  &:last-child {
+    margin: 0;
+  }
+}

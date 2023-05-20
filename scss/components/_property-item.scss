@@ -1,0 +1,19 @@
+.property-- {
+  &item {
+    text-align: center;
+    figure a {
+      @include FLEX;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 0 0 16px;
+      img {
+        @include OBJFIT;
+      }
+    }
+    h3 a {
+      color: $purple_501BA8;
+    }
+  }
+}

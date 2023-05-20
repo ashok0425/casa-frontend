@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  font-display: swap;
+}
+body {
+  font-size: 16px;
+  line-height: 1.8;
+  color: $black_534F5A;
+  font-family: "Lato", sans-serif;
+  &.hide {
+    overflow: hidden;
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+[class*="sliderBox"] {
+  max-width: 100%;
+  min-width: 100%;
+}
+section {
+  position: relative;
+  z-index: 10;
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1,
+.h1 {
+  font-size: 64px;
+  line-height: 1.2;
+}
+h2,
+.h2 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+h3,
+.h3 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+h4,
+.h4 {
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+h6,
+.h6 {
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.padding {
+  padding: 80px 0;
+}
+
+.general-- {
+  &box {
+    display: grid;
+    grid-gap: 50px;
+    h2 {
+      text-align: center;
+      color: $purple_501BA8;
+      font-weight: 600;
+    }
+  }
+  &infoBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    background: $pink_CA2790;
+    border-radius: 50px;
+    padding: 50px 30px;
+    & > * {
+      @include FLEX;
+      flex-direction: column;
+      figure {
+        display: flex;
+        width: 60px;
+        height: 60px;
+        margin: 0 0 18px;
+        img {
+          @include OBJFIT;
+          filter: brightness(0) invert(1);
+        }
+      }
+      h6 {
+        font-size: 16px;
+        color: $w;
+        line-height: 1.3;
+      }
+      span,
+      a {
+        line-height: 1.3;
+        display: inline-flex;
+        color: rgba($w, 0.8);
+      }
+      a:hover {
+        text-decoration: underline;
+        color: $w;
+      }
+    }
+  }
+}
+
+.rating {
+  @include FLEX;
+  .reviews {
+    @include FLEX;
+    li {
+      display: flex;
+      @include MARGIN(0 2px 0 0);
+      img {
+        width: 16px;
+        height: 16px;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+  & > span {
+    display: block;
+    font-weight: 500;
+    margin: 0 0 0 10px;
+    font-size: 12px;
+    color: $purple_501BA8;
+  }
+}
