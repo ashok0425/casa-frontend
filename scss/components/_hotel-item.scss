@@ -174,3 +174,52 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .hotel--item.listView {
+    padding: 25px;
+    grid-gap: 0 25px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hotel--item.listView {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    .rating {
+      flex-direction: column;
+    }
+    .hotel-- {
+      &image {
+        grid-area: 1/1 / span 1 / span 1;
+      }
+      &titleGroup {
+        grid-area: 2/1 / span 1 / span 1;
+        text-align: center;
+      }
+      &amenities {
+        grid-area: 3/1 / span 1 / span 1;
+        margin: 0;
+      }
+      &offers {
+        grid-area: 4 /1 / span 1 / span 1;
+        text-align: center;
+      }
+      &priceGroup {
+        grid-area: 5/1 / span 1 / span 1;
+        & > a {
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .hotel--titleGroup {
+    grid-area: 2/1 / span 1 / span 2;
+    text-align: center;
+    .rating {
+      flex-direction: column;
+    }
+  }
+  .hotel--priceGroup {
+    grid-area: 3/1 / span 1 / span 2;
+    text-align: center;
+  }
+}

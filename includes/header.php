@@ -19,7 +19,7 @@
             <hgroup class="header--group">
                 <figure class="header--logo"><a href="/" title="CASA"><img src="/img/logo/logo-white.png" alt="CASA"></a></figure>
                 <a href="#" title="List your property" class="header--link">
-                    List Your Property
+                    <span>List Your Property</span>
                     <img src="/img/icons/icon-hotel-fill.svg" alt="icon-hotel-fill">
                 </a>
                 <a href="#" class="header--btn btn btn--primary" title="Login/Signup">Log In or Sign Up</a>

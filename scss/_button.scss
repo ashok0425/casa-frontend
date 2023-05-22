@@ -28,6 +28,9 @@
     &.column {
       flex-direction: column;
     }
+    & > .btn {
+      @include MARGIN(0 15px 0 0);
+    }
     &.center {
       justify-content: center;
     }

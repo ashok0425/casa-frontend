@@ -26,4 +26,23 @@
     font-size: 36px;
     color: $w;
   }
+  figure {
+    width: 100%;
+    height: 100%;
+    img {
+      @include OBJFIT;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .region--item {
+    max-width: calc(50% - 15px);
+  }
+}
+@media screen and (max-width: 576px) {
+  .region--item {
+    max-width: 100%;
+    height: 325px;
+  }
 }

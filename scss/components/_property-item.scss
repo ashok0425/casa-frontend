@@ -17,3 +17,8 @@
     }
   }
 }
+@media screen and (max-width: 576px) {
+  .property--item figure a {
+    height: 225px;
+  }
+}

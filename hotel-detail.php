@@ -93,6 +93,64 @@ require 'includes/header.php' ?>
                         <h3 class="col-white">Starting from Rs 14,000/-</h3>
                         <span>Family Room</span>
                     </div>
+                    <ul class="hotelDetail--actions">
+                        <li>
+                            <h6>Check-In</h6>
+                            <div class="form--group dateGroup">
+                                <input type="date" name="checkin" id="checkin" onchange="this.nextElementSibling.innerHTML=this.value">
+                                <label for="checkin">Add Date</label>
+                            </div>
+                        </li>
+                        <li>
+                            <h6>Check-Out</h6>
+                            <div class="form--group dateGroup">
+                                <input type="date" name="checkout" id="checkout" onchange="this.nextElementSibling.innerHTML=this.value">
+                                <label for="checkout">Add Date</label>
+                            </div>
+                        </li>
+                        <li>
+                            <h6>Guests</h6>
+                            <div class="numberGroup">
+                                <p><span>1</span>Guest</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h6>Children</h6>
+                            <div class="numberGroup">
+                                <p><span>1</span>Children</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h6>No. of Rooms</h6>
+                            <div class="numberGroup">
+                                <p><span>1</span>Room</p>
+                            </div>
+                        </li>
+                        <li>
+                            <h6>Hourly Checkout</h6>
+                        </li>
+                    </ul>
+                    <div class="roomLists">
+                        <?php for ($i = 0; $i < 3; $i++) { ?>
+                            <div class="roomItem">
+                                <div class="roomDetail">
+                                    <div class="title">
+                                        <h4>Couple Room</h4>
+                                        <p>Rs 24,500 / night</p>
+                                    </div>
+                                    <ul class="hotelOffers">
+                                        <li><img src="/img/icons/icon-wine-glass.svg" alt=""></li>
+                                        <li><img src="/img/icons/icon-wine-glass.svg" alt=""></li>
+                                        <li><img src="/img/icons/icon-wine-glass.svg" alt=""></li>
+                                        <li><img src="/img/icons/icon-wine-glass.svg" alt=""></li>
+                                        <li><img src="/img/icons/icon-wine-glass.svg" alt=""></li>
+                                    </ul>
+                                    <button>Select</button>
+                                </div>
+                                <figure><img src="/img/hotels/hotel-img-1.png" alt=""></figure>
+                            </div>
+                        <?php } ?>
+                    </div>
                     <div class="btn--holder w-full column">
                         <a href="#" class="btn btn--primary">Reserve</a>
                         <legend class="col-white">You won't be charged yet</legend>

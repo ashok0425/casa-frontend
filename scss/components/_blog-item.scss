@@ -57,3 +57,24 @@
     }
   }
 }
+@media screen and (max-width: 992px) {
+  .blog--item {
+    figure {
+      margin: 0 0 20px;
+      a {
+        height: 200px;
+      }
+    }
+    p {
+      margin: 10px 0 0 0;
+    }
+    & > a {
+      margin: 15px 0 0;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .blog--imgDetail .rating {
+    display: none;
+  }
+}

@@ -9,6 +9,20 @@ if (myEle) {
     autoplay: true,
     pauseOnHover: true,
     focus: "center",
+    breakpoints: {
+      992: {
+        perPage: 3,
+        gap: 25,
+      },
+      768: {
+        perPage: 2,
+        gap: 25,
+      },
+      576: {
+        perPage: 1,
+        gap: 20,
+      },
+    },
   }).mount();
 }
 
@@ -22,6 +36,20 @@ if (myEle) {
     pagination: false,
     autoplay: true,
     pauseOnHover: true,
+    breakpoints: {
+      992: {
+        perPage: 3,
+        gap: 25,
+      },
+      768: {
+        perPage: 2,
+        gap: 25,
+      },
+      576: {
+        perPage: 1,
+        gap: 20,
+      },
+    },
   }).mount();
 }
 
@@ -35,6 +63,19 @@ if (myEle) {
     pagination: false,
     autoplay: true,
     pauseOnHover: true,
+    breakpoints: {
+      992: {
+        gap: 25,
+      },
+      768: {
+        perPage: 2,
+        gap: 25,
+      },
+      576: {
+        perPage: 1,
+        gap: 20,
+      },
+    },
   }).mount();
 }
 
@@ -48,5 +89,15 @@ if (myEle) {
     pagination: false,
     autoplay: true,
     pauseOnHover: true,
+    breakpoints: {
+      768: {
+        perPage: 2,
+        gap: 25,
+      },
+      576: {
+        perPage: 1,
+        gap: 20,
+      },
+    },
   }).mount();
 }

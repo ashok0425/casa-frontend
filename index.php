@@ -1,7 +1,7 @@
 <?php $title = "Home";
 require 'includes/header.php' ?>
 <!-- Banner Section -->
-<section class="banner--section" style="background: url('/img/banner-bg.png') center center no-repeat; background-size:cover;">
+<section class="banner--section padding" style="background: url('/img/banner-bg.png') center center no-repeat; background-size:cover;">
     <div class="container">
         <div class="banner--box">
             <h1>Book <i>Cheapest & Best destinations</i> Faster and securely</h1>
@@ -30,7 +30,7 @@ require 'includes/header.php' ?>
                         <option value="1-1">1 Room, 1 Guest</option>
                     </select>
                 </div>
-                <div class="submit--group">
+                <div class="submit--holder">
                     <button type="submit" class="btn btn--primary" aria-label="search">Search</button>
                 </div>
             </form>
